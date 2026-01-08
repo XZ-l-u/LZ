@@ -3,51 +3,486 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Government Compensation & Benefits Exam Prep</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Lynette Zeng - Financial Strategy, Compliance & Data Analytics</title>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lynette Zeng",
+      "url": "https://www.lynettezeng.com/",
+      "sameAs": [
+        "INSERT_LINKEDIN_URL_HERE",
+        "INSERT_X_OR_INSTAGRAM_URL_HERE"
+      ],
+      "jobTitle": "Financial Strategy, Compliance & Data Analytics Consultant",
+      "description": "Financial strategy and compliance consultant helping public organizations and nonprofits strengthen financial accuracy, compliance, and decision-making through practical analytics and clear reporting.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.lynettezeng.com/"
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: #4a4a4a;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            color: #1a1a1a;
+        }
+        
+        .hero {
+            padding: 100px 0 80px;
+            text-align: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            line-height: 1.2;
+        }
+        
+        .hero .subtitle {
+            font-size: 20px;
+            color: #4a4a4a;
+            margin-bottom: 36px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #ffffff;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #333333;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 48px;
+            text-align: center;
+            color: #1a1a1a;
+        }
+        
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #333;
+        }
+        
+        .about-content p {
+            margin-bottom: 20px;
+        }
+        
+        .about-content ul {
+            margin: 20px 0 20px 24px;
+        }
+        
+        .about-content li {
+            margin-bottom: 8px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+        
+        .service-card {
+            background: #f8f9fa;
+            padding: 32px;
+            border-radius: 8px;
+            border: 1px solid #e5e5e5;
+        }
+        
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+        
+        .service-card .description {
+            color: #4a4a4a;
+            font-size: 15px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .service-card .section-label {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #1a1a1a;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            margin-bottom: 16px;
+        }
+        
+        .service-card li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 6px;
+            color: #333;
+            font-size: 15px;
+        }
+        
+        .service-card li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #1a1a1a;
+        }
+        
+        .service-card .price {
+            font-weight: 600;
+            color: #1a1a1a;
+            font-size: 16px;
+            margin-top: 16px;
+        }
+        
+        .clients-list {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+        
+        .clients-list li {
+            list-style: none;
+            color: #4a4a4a;
+            font-size: 17px;
+        }
+        
+        .cta-section {
+            background: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .cta-section h2 {
+            font-size: 36px;
+            margin-bottom: 24px;
+        }
+        
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 32px;
+            color: #e5e5e5;
+        }
+        
+        .btn-light {
+            background: #ffffff;
+            color: #1a1a1a;
+        }
+        
+        .btn-light:hover {
+            background: #f0f0f0;
+        }
+        
+        .contact-section {
+            background: #f8f9fa;
+        }
+        
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact-content p {
+            font-size: 17px;
+            color: #4a4a4a;
+            margin-bottom: 32px;
+        }
+        
+        .contact-info {
+            font-size: 18px;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+        
+        .contact-info a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        footer p {
+            color: #a0a0a0;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero .subtitle {
+                font-size: 18px;
+            }
+            
+            .nav-links {
+                gap: 20px;
+                font-size: 14px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<body class="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white p-4 md:p-8">
-    <div class="max-w-5xl mx-auto">
-        <div class="text-center mb-8">
-            <h1 class="text-3xl md:text-4xl font-bold mb-2">Government Compensation & Benefits Exam Prep</h1>
-            <p class="text-gray-400">Comprehensive study guide - 84 slides covering all exam topics</p>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><img src="logo.png">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div id="topicSelector" class="flex gap-4 mb-8 flex-wrap justify-center"></div>
-        <div id="topicTitle" class="rounded-lg p-6 mb-6 text-center"></div>
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Financial Strategy, Compliance,<br>and Data Modeling Excellence</h1>
+            <p class="subtitle">Helping public organizations trust their data and make confident decisions.</p>
+            <a href="#contact" class="btn">Request a Consultation</a>
+        </div>
+    </section>
 
-        <div class="bg-gray-800 rounded-xl p-6 md:p-8 shadow-2xl min-h-[400px] mb-6">
-            <div class="mb-6">
-                <h3 id="slideTitle" class="text-2xl md:text-3xl font-bold mb-2"></h3>
-                <p id="slideSubtitle" class="text-lg md:text-xl text-gray-400"></p>
+    <section id="what">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <div class="about-content" style="text-align: center;">
+                <p>I provide independent financial accuracy reviews, compliance support, and decision-ready analytics for public organizations and nonprofits.</p>
             </div>
-            <div id="slideContent" class="space-y-3"></div>
         </div>
+    </section>
 
-        <div class="flex items-center justify-between gap-4">
-            <button id="prevBtn" class="px-4 md:px-6 py-3 bg-gray-700 rounded-lg hover:bg-gray-600 disabled:opacity-50 transition-all">
-                ← Prev
-            </button>
-            <div class="text-center flex-1">
-                <p id="slideCounter" class="text-gray-400 text-sm md:text-base mb-2"></p>
-                <div class="max-w-xs mx-auto bg-gray-700 rounded-full h-2">
-                    <div id="progressBar" class="h-2 rounded-full transition-all"></div>
+    <section id="who" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Who I Help</h2>
+            <ul class="clients-list">
+                <li>Small Governments</li>
+                <li>Public Agencies</li>
+                <li>Airports</li>
+                <li>Nonprofits</li>
+                <li>Grant-Funded Organizations</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Lynette Zeng</h2>
+            <div class="about-content">
+                <p>I help public organizations and nonprofits strengthen financial accuracy, compliance, and decision-making through practical analytics and clear reporting.</p>
+                
+                <p>With a background spanning accounting, business analytics, information systems, and public-sector operations, I work at the intersection of finance and data—where accuracy matters and trust is essential.</p>
+                
+                <p>I have supported organizations where leadership depends on reliable information to make responsible decisions. Through that experience, I've seen how unclear data, weak controls, or rushed reporting can undermine confidence and create unnecessary risk.</p>
+                
+                <p>My approach is calm, independent, and practical. I focus on:</p>
+                <ul>
+                    <li>Improving financial clarity</li>
+                    <li>Strengthening internal controls</li>
+                    <li>Translating complex data into decision-ready insights</li>
+                </ul>
+                
+                <p>I believe good governance starts with trustworthy data. My work helps organizations move from uncertainty to confidence—without unnecessary complexity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Financial Accuracy & Compliance Review</h3>
+                    <p class="description">Independent review of financial reports and data reliability</p>
+                    
+                    <div class="section-label">Includes</div>
+                    <ul>
+                        <li>Data consistency review</li>
+                        <li>Compliance risk identification</li>
+                        <li>Management-ready summary</li>
+                    </ul>
+                    
+                    <div class="section-label">Best For</div>
+                    <ul>
+                        <li>Small governments</li>
+                        <li>Public agencies</li>
+                        <li>Airports</li>
+                        <li>Nonprofits</li>
+                    </ul>
+                    
+                    <p class="price">Investment: $2,500 – $5,000</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Management Reporting & Analytics Setup</h3>
+                    <p class="description">Clear dashboards designed for leadership decisions</p>
+                    
+                    <div class="section-label">Includes</div>
+                    <ul>
+                        <li>Reporting template design</li>
+                        <li>Data validation rules</li>
+                        <li>Documentation and handoff</li>
+                    </ul>
+                    
+                    <p class="price">Investment: $3,500 – $7,500</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Internal Controls & Risk Assessment</h3>
+                    <p class="description">Practical review of processes and controls</p>
+                    
+                    <div class="section-label">Includes</div>
+                    <ul>
+                        <li>Risk register</li>
+                        <li>Control gap analysis</li>
+                        <li>Improvement roadmap</li>
+                    </ul>
+                    
+                    <p class="price">Investment: $4,000 – $8,000</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Monthly Advisory Support</h3>
+                    <p class="description">Ongoing financial and reporting guidance</p>
+                    
+                    <div class="section-label">Includes</div>
+                    <ul>
+                        <li>Report review</li>
+                        <li>Analytics questions</li>
+                        <li>Management support</li>
+                    </ul>
+                    
+                    <p class="price">Investment: $1,500 – $3,000 / month</p>
                 </div>
             </div>
-            <button id="nextBtn" class="px-4 md:px-6 py-3 bg-gray-700 rounded-lg hover:bg-gray-600 disabled:opacity-50 transition-all">
-                Next →
-            </button>
         </div>
+    </section>
 
-        <div class="mt-8 text-center text-gray-500 text-sm">
-            <p>💡 Focus on "Exam Tip" sections for key concepts</p>
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to improve financial clarity and confidence?</h2>
+            <p>Reliable data builds confidence. Clear reporting supports good governance. Strong controls reduce risk.</p>
+            <a href="#contact" class="btn btn-light">Contact Me</a>
         </div>
-    </div>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slides-data.js"></script>
-    <script>
-const topics=[{title:"Topic 1: Compensation Structures and Payroll",color:"bg-blue-600",slides:[{title:"Compensation Structures and Payroll",subtitle:"Foundation of Government Personnel Management",content:["Core compensation models and salary administration","Payroll compliance and tax obligations","Employee benefits and time-off management","Legal frameworks governing compensation"]},{title:"Step and Grade Compensation Model",content:["Definition: Structured pay system with defined grades (job levels) and steps (increments within grades)","Each position assigned to a grade based on duties, responsibilities, and qualifications","Steps represent progression within a grade, typically based on time or performance","Exam Tip: Know that this provides transparency, equity, and predictability in compensation","Example: Grade 5, Step 3 might be $45,000; Grade 5, Step 4 might be $47,000"]},{title:"Position Control",content:["Definition: System to track and manage authorized positions in budget","Key Component: Links budgeted positions to actual filled positions","Prevents overspending on personnel costs","Tracks: Position number, grade, salary, incumbent, funding source","Exam Tip: Position control is essential for budget management and ensures spending stays within appropriations"]},{title:"Budgeting Salary and Wages",content:["Calculate total personnel costs including:","• Base salaries for all authorized positions","• Step increases and merit raises","• Overtime and temporary staffing","• Vacancy savings (positions unfilled during year)","Exam Tip: Personnel costs typically 60-80% of government budgets","Must account for mid-year hires and turnover"]},{title:"Collective Bargaining",content:["Process: Union representatives negotiate with employer on behalf of employees","Topics: Wages, benefits, working conditions, grievance procedures","Results in collective bargaining agreement (CBA)","Impact on Compensation: Sets wage scales, step increases, and benefit levels","Exam Tip: CBAs legally binding; must be followed in budgeting and administration"]},{title:"Employer Costs: Private vs. Public",content:["Public Sector typically has:","• Higher pension costs (defined benefit plans)","• More comprehensive health benefits","• Greater job security provisions","• More generous paid time off","Private Sector typically has:","• More variable compensation (bonuses)","• Defined contribution retirement plans","Exam Tip: Public sector total compensation often competitive despite lower base pay"]},{title:"FICA (Federal Insurance Contributions Act)",content:["Social Security tax: 6.2% employee + 6.2% employer = 12.4% total","Medicare tax: 1.45% employee + 1.45% employer = 2.9% total","Additional Medicare tax: 0.9% on earnings over $200,000 (employee only)","Wage base limit for Social Security: $168,600 (2024)","Exam Tip: Know the percentages and that both employer and employee contribute","Some government employees exempt if covered by alternative retirement systems"]},{title:"Section 218 Agreement",content:["Allows state/local governments to extend Social Security coverage to employees","Voluntary agreement with Social Security Administration","Once coverage extended, generally cannot be terminated","Exam Tip: Without Section 218 agreement, government employees may not be covered by Social Security","Important for retirement planning and portability"]},{title:"IRS Form 941",content:["Employer's Quarterly Federal Tax Return","Reports: Wages paid, federal income tax withheld, FICA taxes","Due: Last day of month following end of quarter","Must reconcile with annual Form W-2s and W-3","Exam Tip: Critical compliance document; penalties for late filing","Shows both employee and employer portions of payroll taxes"]},{title:"Fringe Benefits",content:["Non-wage compensation provided to employees:","• Health insurance","• Retirement contributions","• Life and disability insurance","• Paid time off","• Tuition assistance","Exam Tip: Fringe benefit rate typically 25-40% of base salary","Must be budgeted and tracked separately from wages"]},{title:"Longevity Pay",content:["Additional compensation based on length of service","Rewards employee retention and loyalty","May be percentage of salary or flat amount","Typically starts after 5-10 years of service","Exam Tip: Common in government; creates incentive to stay","Must be budgeted and included in total compensation calculations"]},{title:"Tuition Assistance",content:["Employer pays for employee education/training","IRS allows up to $5,250/year tax-free to employee","Amounts over $5,250 are taxable income","Often requires employee commitment to stay employed","Exam Tip: Investment in workforce development","May require approval and relate to current job or career advancement"]},{title:"Paid Time Off (PTO)",content:["Consolidated leave bank for vacation, sick, personal days","Accrues based on length of service or pay period","Must track accrual and usage accurately","Liability on balance sheet for unused balances","Exam Tip: PTO simplifies administration but may increase costs","Employees more likely to use all leave when combined"]},{title:"Merit Pay Model",content:["Pay increases based on performance evaluation","Rewards high performers with larger increases","Requires objective performance metrics","Alternative to automatic step increases","Exam Tip: More common in private sector but growing in government","Requires strong evaluation system and adequate funding"]},{title:"FLSA and Non-Discretionary Bonuses",content:["Fair Labor Standards Act governs overtime and minimum wage","Non-discretionary bonus: Announced in advance, expected by employees","Examples: Production bonuses, attendance bonuses, safety bonuses","Must be included in regular rate for overtime calculations","Exam Tip: Know difference from discretionary bonuses (gifts, not expected)","Non-discretionary bonuses increase overtime costs"]},{title:"Importance of Time Tracking",content:["Legal Compliance: FLSA requires accurate time records","Overtime Calculation: Ensures proper payment for hours over 40/week","Leave Management: Tracks accrual and usage of PTO","Cost Allocation: Assigns labor costs to correct projects/departments","Exam Tip: Time tracking protects both employer and employee","Required records must be kept for at least 3 years"]},{title:"Carryover Vacation Balances",content:["Unused vacation time carried from one year to next","Policy may limit maximum carryover (use-it-or-lose-it)","Creates financial liability for employer","Must be accrued and reported on financial statements","Exam Tip: Large carryover balances indicate risk","Can implement caps or payout policies to manage liability"]},{title:"Flexible Spending Account (FSA)",content:["Pre-tax employee contributions for medical or dependent care","Health FSA: Up to $3,200 (2024) for medical expenses","Dependent Care FSA: Up to $5,000 for childcare expenses","Use-it-or-lose-it rule (some rollover allowed)","Exam Tip: Reduces taxable income for employee and employer","Section 125 cafeteria plan allows FSAs"]},{title:"Federal Minimum Wage",content:["Current: $7.25/hour (since 2009)","History: Started at $0.25/hour in 1938 (FLSA)","Many states have higher minimum wages","Government employers must pay at least minimum wage","Exam Tip: Know that federal minimum hasn't changed since 2009","State and local minimums can exceed federal rate"]},{title:"Family Medical Leave Act (FMLA)",content:["Provides up to 12 weeks unpaid, job-protected leave","Reasons: Birth/adoption, serious health condition, military family leave","Applies to employers with 50+ employees","Employee must have worked 1,250 hours in past 12 months","Exam Tip: Employer maintains health benefits during FMLA leave","Must restore employee to same or equivalent position"]},{title:"Bi-Weekly Payroll Schedule",content:["Employees paid every two weeks (26 pay periods/year)","Key Element: Two months per year have 3 pay periods","Budget Impact: Must account for 27 paydays in some fiscal years","Accruals: Benefits accrue per pay period","Exam Tip: Most common government payroll schedule","Requires careful budget planning for extra pay periods"]},{title:"Budgeting Vacation Time",content:["Calculate total vacation liability:","• Current year accruals","• Expected usage","• Carryover from previous year","• Payouts for terminations","Exam Tip: Vacation is earned compensation, must be budgeted","Higher-paid employees create larger liability per hour"]},{title:"COBRA Benefits",content:["Consolidated Omnibus Budget Reconciliation Act","Allows terminated employees to continue health coverage","Employee pays full premium (employer + employee portion) plus 2% admin fee","Coverage for 18-36 months depending on qualifying event","Exam Tip: Applies to employers with 20+ employees","Qualifying events: Termination, reduced hours, divorce, death"]},{title:"Strong Personnel Structure",content:["Elements of strong government personnel system:","• Clear policies and procedures","• Position control and classification system","• Competitive compensation and benefits","• Performance management system","• Professional development opportunities","Exam Tip: Strong HR structure supports organizational goals","Ensures compliance, equity, and employee satisfaction"]}]},{title:"Topic 2: Retirement Benefits",color:"bg-green-600",slides:[{title:"Retirement Benefits Overview",subtitle:"Pensions and Defined Contribution Plans",content:["Defined Benefit vs. Defined Contribution plans","Pension funding and actuarial valuations","Investment management and fiduciary duties","Plan design and participant education"]},{title:"Defined Benefit (DB) Plan",content:["Employer promises specific monthly benefit at retirement","Formula: Salary × Years of Service × Multiplier","Example: $60,000 × 30 years × 2% = $36,000/year","Employer bears investment risk","Exam Tip: Provides predictable retirement income","Requires actuarial valuations and full funding"]},{title:"Defined Contribution (DC) Plan",content:["Employer/employee contribute specific amounts","Examples: 401(k), 403(b), 457(b)","Benefit depends on contributions + investment returns","Employee bears investment risk","Exam Tip: Portable - can take account when leaving","Final benefit unknown until retirement"]},{title:"DB vs. DC Comparison",content:["Defined Benefit: Predictable benefit, employer risk, complex, not portable","Defined Contribution: Variable benefit, employee risk, simpler, portable","Exam Tip: Many governments moving to DC or hybrid","Balance between security and cost control"]},{title:"Portable Retirement Plan",content:["Employee can take retirement account when changing jobs","DC plans are portable","Can roll over to IRA or new employer plan","Vesting schedule may apply to employer contributions","Exam Tip: Portability important for workforce mobility","Government DB plans traditionally not portable"]},{title:"Hybrid Retirement Plans",content:["Combines DB and DC components","Example: Small DB pension + employer match DC","Cash Balance Plan: DB that looks like DC","Balances predictability with cost control","Exam Tip: Growing in popularity as compromise","Provides guaranteed benefit plus upside potential"]},{title:"Actuarial Valuation Purpose",content:["Determines funded status of pension plan","Calculates required employer contributions","Projects future benefit payments","Assesses plan financial health","Exam Tip: Required annually or biennially for DB","Uses assumptions for returns, mortality, salary growth"]},{title:"Procuring Actuarial Services",content:["Select qualified actuary through RFP","Look for: EA, ASA, FSA credentials, government experience","Scope: Annual valuations, GASB reporting, funding studies","Independence important for objective advice","Exam Tip: Actuary provides critical financial projections","Review and rebid every 5-7 years"]},{title:"Unfunded Actuarial Accrued Liability",content:["UAAL = Total Liability - Market Value of Assets","Must be amortized (paid off) over time","Time Limit: Typically 20-30 years maximum","Exam Tip: GASB requires disclosure of UAAL","Shorter amortization = higher costs but better funded status"]},{title:"Pension Funding Policy Elements",content:["1. Actuarially Determined Contribution methodology","2. Amortization period for unfunded liability","3. Asset valuation method (smoothing)","4. Assumptions for returns, inflation, demographics","5. Contribution timing and level","Exam Tip: Good policy ensures sustainable funding","Should pay at least ADC annually"]},{title:"Asset Allocation Purpose",content:["Divides investments among asset classes","Major Classes: Stocks, bonds, real estate, alternatives","Purpose: Optimize returns while managing risk","Diversification reduces volatility","Exam Tip: Strategic allocation based on time horizon","DB plans can take more risk with longer horizons"]},{title:"DB Plan Major Asset Classes",content:["Domestic Equity: 30-40% typical","International Equity: 15-25%","Fixed Income (bonds): 20-30%","Real Estate: 5-10%","Alternative Investments: 5-15%","Exam Tip: Know typical ranges for government pensions","More aggressive = higher equity allocation"]},{title:"Asset Smoothing",content:["Reduces volatility in actuarial valuations","Recognizes gains/losses over 3-5 years","Prevents dramatic swings in contributions","Actuarial value differs from market value","Exam Tip: Smoothing must stay within reasonable range","Helps budget stability but can hide true status"]},{title:"Fiduciary Duty - DB Plans",content:["Trustees must act in exclusive interest of participants","Standard: Prudent expert would exercise","Duties: Diversify, follow plan documents, pay reasonable expenses","Monitor service providers","Exam Tip: Fiduciary standard is highest legal duty","Personal liability possible for breaches"]},{title:"Plan Management Responsibility",content:["Governing board has overall responsibility","May delegate to retirement board or committee","Responsibilities: Set investment policy, select providers, monitor performance","Exam Tip: Cannot delegate fiduciary responsibility, only duties","Board remains accountable"]},{title:"Investment Policy Statement",content:["Written policy to guide investment decisions","Contents: Objectives, allocation ranges, rebalancing, benchmarks, roles","Exam Tip: IPS is cornerstone of prudent management","Should be reviewed and updated regularly"]},{title:"DC Plan Asset Classes",content:["Target Date Funds: Automatically adjust with age","Stock Funds: Large-cap, small-cap, international","Bond Funds: Government, corporate, stable value","Money Market: Cash equivalent, lowest risk","Exam Tip: DC plans offer participant choice","Should include low-cost index and target date funds"]},{title:"Brokerage Window Option",content:["Allows DC participants to invest beyond plan menu","Access to thousands of securities and funds","Increases flexibility but adds complexity","Higher fees and risks for participants","Exam Tip: Optional feature, not required","Requires additional education and disclosures"]},{title:"DC Plan Investment Risk",content:["Participants bear all investment risk","Risks: Market volatility, poor choices, insufficient contributions, timing","Exam Tip: Employer should provide education and diversified options","Target date funds help manage risk"]},{title:"457(b) Deferred Compensation",content:["Voluntary plan for government employees","Contributions: Pre-tax up to $23,000 (2024)","Catch-up: $7,500 if age 50+","Special catch-up: Double limit 3 years before retirement","Exam Tip: No 10% early withdrawal penalty","Assets in trust for exclusive benefit"]},{title:"IRS Taxation of 457(b)",content:["Contributions: Pre-tax (reduce current income)","Growth: Tax-deferred (no taxes on gains)","Withdrawals: Taxed as ordinary income","RMD: Required minimum distributions at age 73","Exam Tip: Cannot withdraw before separation","Favorable tax treatment encourages savings"]},{title:"401(k) for Government",content:["Less common than 457(b) for state/local","Similar limits and tax treatment","Subject to non-discrimination testing","10% penalty for withdrawal before age 59½","Exam Tip: Some offer both 401(k) and 457(b)","457(b) preferred due to no early penalty"]},{title:"Plan Design Considerations",content:["Factors: Cost, workforce demographics, competitive positioning, risk tolerance, admin capability","Exam Tip: No one-size-fits-all solution","Trend toward hybrid or DC to manage costs"]},{title:"New Benefit Tiers",content:["Different levels for new hires vs. existing","Common pension reform approach","Lower tier: Higher retirement age, lower multiplier, higher contributions","Exam Tip: Grandfathers existing, reduces future costs","Can create morale and equity issues"]},{title:"DROP Plans",content:["Employee freezes pension but keeps working","Pension payments deposited in DROP account","Employee receives balance at actual retirement","Typical duration: 3-5 years","Exam Tip: Retains experienced employees","Requires careful actuarial analysis"]},{title:"Early Retirement Incentives",content:["Temporary programs to encourage early retirement","May offer: Enhanced credit, lump sums, Medicare bridge","Cost: Immediate outlay vs. long-term savings","Exam Tip: Use for restructuring or budget reduction","Risk of losing valuable employees"]},{title:"Alternative Investments",content:["Non-traditional: Private equity, hedge funds, commodities","Purpose: Higher returns and diversification","Characteristics: Less liquid, higher fees, complex, less transparent","Exam Tip: Require specialized expertise","Typically 5-15% of large pension portfolios"]},{title:"DB Financial Reporting",content:["GASB 67: Pension plan reporting","GASB 68: Employer reporting","Required: Net pension liability, expense, deferred flows, assumptions","Exam Tip: Shows true economic cost and funded status","Large unfunded liabilities on balance sheet"]},{title:"Participant Education",content:["Critical for DC success","Topics: Investment basics, diversification, target dates, contribution rates, tax implications","Exam Tip: Employer responsibility to provide education, not advice","Better educated participants make better decisions"]}]},{title:"Topic 3: OPEB and Healthcare",color:"bg-purple-600",slides:[{title:"OPEB and Healthcare Overview",subtitle:"Managing Healthcare and OPEB Obligations",content:["Healthcare plans and ACA compliance","OPEB accounting and funding strategies","Cost containment and plan design","Trust structures and fiduciary responsibilities"]},{title:"What is OPEB?",content:["Other Postemployment Benefits (not pension)","Most common: Retiree health insurance","Other: Life insurance, dental, vision, long-term care","Exam Tip: OPEB typically pay-as-you-go","Creates large unfunded liabilities on statements"]},{title:"GASB Standards on OPEB",content:["GASB 74: Financial reporting for OPEB plans","GASB 75: Reporting by employers","Similar to pension standards (67/68)","Requires recognition of OPEB liability on balance sheet","Exam Tip: Standards effective 2017-2018","Brought transparency to off-balance-sheet obligations"]},{title:"OPEB Three-Step Process",content:["Step 1: Actuarial Valuation - determine liability, project payments","Step 2: Calculate Annual Required Contribution","Step 3: Develop Funding Strategy - pre-funding vs pay-as-you-go","Exam Tip: Many governments still pay-as-you-go despite large liabilities"]},{title:"Methods of Financing OPEB",content:["Pay-As-You-Go: Pay premiums as retirees incur (most common, no advance funding, higher long-term cost)","Pre-funding through Trust: Contribute to irrevocable trust, assets grow tax-free, reduces long-term costs","Exam Tip: Pre-funding provides better funded status and lower discount rate"]},{title:"OPEB Trust Structures",content:["Section 115 Trust (IRS Code):","Tax-exempt governmental trust","Assets for exclusive benefit of participants","Investment earnings tax-free","Can use higher discount rate","Exam Tip: Establishing trust key to sustainable funding","Similar to pension trust structure"]},{title:"Section 115 Trust Details",content:["Requirements: Written agreement, irrevocable assets, exclusive benefit, cannot revert","Benefits: Tax-free growth, higher discount rate, improved reporting","Exam Tip: Most common trust structure for OPEB pre-funding"]},{title:"OPEB Trust Investment Decisions",content:["Trustees make decisions within IPS parameters","Similar to pension investment management","Considerations: Time horizon (shorter than pensions), cash flow needs, risk tolerance","Exam Tip: OPEB trusts often more conservative","Must balance growth with liquidity"]},{title:"Multi-Employer OPEB Trust",content:["Multiple governments pool OPEB assets","Benefits: Economies of scale, lower admin costs, professional management, shared risk","Exam Tip: Good option for smaller governments","Each employer maintains separate account"]},{title:"Cost Containment for OPEB",content:["Strategies: Increase retiree premiums, change to defined contribution, reduce services, increase eligibility, Medicare coordination, wellness programs","Exam Tip: Balance cost control with recruitment/retention needs"]},{title:"Sustainable OPEB Funding",content:["Best practices: Establish irrevocable trust, make annual ADC, adopt formal policy, regular valuations, control plan design","Exam Tip: Sustainability requires discipline and long-term commitment","Pay-as-you-go not sustainable for most"]},{title:"OPEB Summary Plan Description",content:["Document explaining OPEB benefits to participants","Contents: Eligibility, benefits provided, premium costs, coverage details, claims procedures","Exam Tip: Clear communication critical for managing expectations","Update when plan changes"]},{title:"Affordable Care Act Overview",content:["Patient Protection and Affordable Care Act (2010)","Key provisions: Employer mandate (50+ FTE), essential benefits, no pre-existing exclusions, dependent coverage to 26, no annual/lifetime limits","Exam Tip: ACA significantly changed employer health insurance landscape"]},{title:"ACA Full-Time Employee",content:["Full-time: Average 30+ hours/week OR 130 hours/month","Used to determine employer mandate","FTE calculation: Total part-time hours ÷ 120","Exam Tip: 50+ FTE triggers employer mandate","Must offer affordable, minimum value coverage or pay penalty"]},{title:"ACA Compliance Requirements",content:["Large employers (50+ FTE) must: Offer coverage to 95% of full-time, affordable (< 9.12% of income), provide minimum value (60%), report on Forms 1094-C and 1095-C","Exam Tip: Non-compliance results in penalties","Affordability based on employee-only cost"]},{title:"ACA Pass-Through Costs",content:["Employers may pass certain ACA fees to employees","PCOR fee, Health Insurance Provider fee (expired 2021), Transitional reinsurance (expired 2016)","Methods: Premium increases, separate line item","Exam Tip: Transparency important when passing costs","Most ACA fees have sunset or been repealed"]},{title:"Section 125 Cafeteria Plan",content:["Allows employees to choose benefits on pre-tax basis","Qualified: Health insurance, dental/vision, FSA, dependent care, group term life ($50,000)","Exam Tip: Must have written plan document","Cannot include most deferred compensation"]},{title:"Benefits in Cafeteria Plans",content:["Can offer: Health premiums, Health FSA, dependent care FSA, dental/vision/disability, HSA contributions","Cannot offer: Scholarships, transportation fringe (after 2017), long-term care","Exam Tip: Know what qualifies as cafeteria benefit"]},{title:"Sponsoring Group Health Plans",content:["Considerations: Fully-insured vs self-funded, network design, premium contributions, compliance, cost projections","Exam Tip: Self-funded has more flexibility but more risk","Fully-insured transfers risk to insurance company"]},{title:"Healthcare Plan Efficiency Ratio",content:["Measures administrative costs relative to benefits","Formula: Administrative Costs ÷ Total Plan Costs","Lower ratio = more efficient (more to benefits)","Typical range: 5-15% for large employers","Exam Tip: Monitor to ensure plan operating efficiently","High ratios may indicate poor design"]},{title:"Communicating Healthcare Benefits",content:["Effective strategies: Annual open enrollment meetings, Summary of Benefits and Coverage (SBC), online portals and tools, one-on-one counseling, retiree-specific communications","Exam Tip: Clear communication increases satisfaction and proper utilization","Use plain language and multiple channels"]},{title:"Long-Term Healthcare Strategic Plan",content:["Elements: Cost projections (5-10 years), plan design options, employee contribution strategy, wellness initiatives, retiree benefit sustainability","Exam Tip: Proactive planning prevents crisis-driven decisions","Should align with overall organizational strategy"]},{title:"HIPAA Privacy Protection",content:["Health Insurance Portability and Accountability Act","Protects sensitive patient health information (PHI)","Requires: Privacy policies, employee training, business associate agreements, breach notification","Exam Tip: HIPAA is fundamental law protecting health information","Violations result in significant penalties"]},{title:"ERISA Summary Plan Description",content:["Employee Retirement Income Security Act requirement","SPD within 120 days of coverage","DOL standards: Plain language, comprehensive explanation, claims/appeals procedures, rights under ERISA","Exam Tip: SPD is legally required disclosure","Update within 210 days after plan year with changes"]},{title:"Medical Expense Reimbursement",content:["Plans that reimburse employees for medical expenses","Types: Health Reimbursement Arrangements (HRA), Flexible Spending Accounts (FSA)","Must comply with ACA and other regulations","Can cover deductibles, copays, dependents","Exam Tip: HRAs employer-funded only, FSAs employee-funded","Different tax treatment and portability"]},{title:"Healthcare Cost Containment",content:["Proven strategies: Wellness programs and preventive care, high-deductible with HSAs, narrow network designs, generic drug programs, telemedicine, disease management","Exam Tip: Multi-faceted approach most effective","Balance cost control with employee satisfaction"]}]}];let currentTopic=0,currentSlide=0;function render(){const t=topics[currentTopic],e=t.slides[currentSlide];document.getElementById("topicTitle").className=`${t.color} rounded-lg p-6 mb-6 text-center`,document.getElementById("topicTitle").innerHTML=`<h2 class="text-xl md:text-2xl font-bold">${t.title}</h2>`,document.getElementById("slideTitle").textContent=e.title,document.getElementById("slideSubtitle").textContent=e.subtitle||"",document.getElementById("slideContent").innerHTML=e.content.map(t=>`<div class="flex items-start gap-3"><div class="flex-shrink-0 w-2 h-2 ${topics[currentTopic].color.replace("bg-","bg-opacity-70 bg-")} rounded-full mt-2"></div><p class="text-base md:text-lg leading-relaxed text-gray-200">${t}</p></div>`).join(""),document.getElementById("slideCounter").textContent=`Slide ${currentSlide+1} of ${t.slides.length}`,document.getElementById("progressBar").className=`${t.color} h-2 rounded-full transition-all`,document.getElementById("progressBar").style.width=`${(currentSlide+1)/t.slides.length*100}%`,document.getElementById("prevBtn").disabled=0===currentSlide,document.getElementById("nextBtn").disabled=currentSlide===t.slides.length-1}function renderTopics(){document.getElementById("topicSelector").innerHTML=topics.map((t,e)=>`<button onclick="changeTopic(${e})" class="px-4 md:px-6 py-3 rounded-lg font-semibold transition-all ${currentTopic===e?`${t.color} text-white shadow-lg scale-105`:"bg-gray-700 text-gray-300 hover:bg-gray-600"}">Topic ${e+1}</button>`).join("")}function changeTopic(t){currentTopic=t,currentSlide=0,renderTopics(),render()}function nextSlide(){currentSlide<topics[currentTopic].slides.length-1&&(currentSlide++,render())}function prevSlide(){currentSlide>0&&(currentSlide--,render())}document.getElementById("nextBtn").onclick=nextSlide,document.getElementById("prevBtn").onclick=prevSlide,document.addEventListener("keydown",t=>{"ArrowRight"===t.key?nextSlide():"ArrowLeft"===t.key&&prevSlide()}),renderTopics(),render();
-    </script>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <p>I'd be glad to have a brief conversation to see whether my services could support your organization.</p>
+                <div class="contact-info">
+                    <p>Email: <a href="mailto:contact@lynettezeng.com">contact@lynettezeng.com</a></p>
+                </div>
+                <div style="margin-top: 32px;">
+                    <p style="font-size: 15px; color: #666;">Lynette Zeng<br>Financial Strategy, Compliance & Data Analytics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Lynette Zeng. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
