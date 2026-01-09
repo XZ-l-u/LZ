@@ -3,27 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lynette Zeng - Financial Strategy, Compliance & Data Analytics</title>
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Lynette Zeng",
-      "url": "https://www.lynettezeng.com/",
-      "sameAs": [
-        "https://www.linkedin.com/in/lynette-zeng-b7b6b6167/",
-        "INSERT_X_OR_INSTAGRAM_URL_HERE"
-      ],
-      "jobTitle": "Financial Strategy, Compliance & Data Analytics Consultant",
-      "description": "Financial strategy and compliance consultant helping public organizations and nonprofits strengthen financial accuracy, compliance, and decision-making through practical analytics and clear reporting.",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://www.lynettezeng.com/"
-      }
-    }
-    </script>
-    
+    <title>Xianghui Zeng | Researcher in Financial Data Systems</title>
     <style>
         * {
             margin: 0;
@@ -32,461 +12,564 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
-            color: #1a1a1a;
-            background: #ffffff;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #fafafa;
         }
         
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 24px;
+        /* Header */
+        .header {
+            background: #fff;
+            border-bottom: 3px solid #34495e;
+            padding: 40px 20px;
+            text-align: center;
         }
         
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid #e5e5e5;
-            padding: 20px 0;
+        .header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+        
+        .header .title {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .header .affiliations {
+            color: #95a5a6;
+            font-size: 0.95rem;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #34495e;
+            padding: 15px;
+            text-align: center;
             position: sticky;
             top: 0;
             z-index: 100;
         }
         
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 20px;
-            font-weight: 600;
-            color: #1a1a1a;
-        }
-	.logo img {
-	  height: 48px;          /* adjust as needed */
- 	 width: auto;
- 	 display: block;
-	}
-        
-        .nav-links {
-            display: flex;
-            gap: 32px;
-            list-style: none;
-        }
-        
-        .nav-links a {
-            color: #4a4a4a;
+        nav a {
+            color: white;
             text-decoration: none;
-            font-size: 15px;
+            margin: 0 20px;
+            font-size: 0.95rem;
             transition: color 0.2s;
         }
         
-        .nav-links a:hover {
-            color: #1a1a1a;
+        nav a:hover {
+            color: #3498db;
         }
         
-        .hero {
-            padding: 100px 0 80px;
-            text-align: center;
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-        }
-        
-        .hero h1 {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #1a1a1a;
-            line-height: 1.2;
-        }
-        
-        .hero .subtitle {
-            font-size: 20px;
-            color: #4a4a4a;
-            margin-bottom: 36px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: #1a1a1a;
-            color: #ffffff;
-            padding: 14px 32px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            font-size: 16px;
-            transition: background 0.3s;
-        }
-        
-        .btn:hover {
-            background: #333333;
-        }
-        
-        section {
-            padding: 80px 0;
-        }
-        
-        .section-title {
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 48px;
-            text-align: center;
-            color: #1a1a1a;
-        }
-        
-        .about-content {
-            max-width: 800px;
+        /* Container */
+        .container {
+            max-width: 900px;
             margin: 0 auto;
-            font-size: 17px;
-            line-height: 1.8;
-            color: #333;
+            padding: 20px;
         }
         
-        .about-content p {
-            margin-bottom: 20px;
+        /* Section Styling */
+        section {
+            background: white;
+            margin: 40px auto;
+            padding: 50px 50px;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            max-width: 900px;
         }
         
-        .about-content ul {
-            margin: 20px 0 20px 24px;
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+            font-weight: 400;
         }
         
-        .about-content li {
-            margin-bottom: 8px;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 32px;
-            margin-top: 48px;
-        }
-        
-        .service-card {
-            background: #f8f9fa;
-            padding: 32px;
-            border-radius: 8px;
-            border: 1px solid #e5e5e5;
-        }
-        
-        .service-card h3 {
-            font-size: 22px;
+        h3 {
+            color: #34495e;
+            font-size: 1.3rem;
+            margin-top: 25px;
             margin-bottom: 12px;
-            color: #1a1a1a;
+            font-weight: 500;
         }
         
-        .service-card .description {
-            color: #4a4a4a;
-            font-size: 15px;
-            margin-bottom: 20px;
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        /* Bio Section */
+        .bio {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        
+        .bio .highlight {
+            background: #ecf0f1;
+            padding: 20px;
+            margin: 25px 0;
+            border-left: 4px solid #3498db;
             font-style: italic;
         }
         
-        .service-card .section-label {
-            font-size: 13px;
-            font-weight: 600;
-            text-transform: uppercase;
-            color: #1a1a1a;
-            margin-top: 20px;
-            margin-bottom: 8px;
-            letter-spacing: 0.5px;
-        }
-        
-        .service-card ul {
+        /* Research Interests */
+        .research-list {
             list-style: none;
-            margin-bottom: 16px;
+            padding: 0;
         }
         
-        .service-card li {
-            padding-left: 20px;
+        .research-list li {
+            padding: 12px 0;
+            padding-left: 30px;
             position: relative;
-            margin-bottom: 6px;
-            color: #333;
-            font-size: 15px;
+            border-bottom: 1px solid #ecf0f1;
         }
         
-        .service-card li:before {
-            content: "•";
+        .research-list li:before {
+            content: "▸";
             position: absolute;
-            left: 0;
-            color: #1a1a1a;
+            left: 10px;
+            color: #3498db;
+            font-weight: bold;
         }
         
-        .service-card .price {
+        /* Education */
+        .education-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .education-item:last-child {
+            border-bottom: none;
+        }
+        
+        .degree {
             font-weight: 600;
-            color: #1a1a1a;
-            font-size: 16px;
-            margin-top: 16px;
+            color: #2c3e50;
+            font-size: 1.1rem;
         }
         
-        .clients-list {
-            display: flex;
-            justify-content: center;
-            gap: 48px;
-            flex-wrap: wrap;
-            margin-top: 32px;
+        .institution {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 5px;
         }
         
-        .clients-list li {
-            list-style: none;
-            color: #4a4a4a;
-            font-size: 17px;
+        .year {
+            color: #95a5a6;
+            font-size: 0.9rem;
         }
         
-        .cta-section {
-            background: #1a1a1a;
-            color: #ffffff;
-            text-align: center;
-            padding: 80px 0;
-        }
-        
-        .cta-section h2 {
-            font-size: 36px;
-            margin-bottom: 24px;
-        }
-        
-        .cta-section p {
-            font-size: 18px;
-            margin-bottom: 32px;
-            color: #e5e5e5;
-        }
-        
-        .btn-light {
-            background: #ffffff;
-            color: #1a1a1a;
-        }
-        
-        .btn-light:hover {
-            background: #f0f0f0;
-        }
-        
-        .contact-section {
+        /* Publications/Working Papers */
+        .publication {
+            margin-bottom: 30px;
+            padding: 20px;
             background: #f8f9fa;
+            border-left: 3px solid #3498db;
         }
         
-        .contact-content {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
+        .publication-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
         }
         
-        .contact-content p {
-            font-size: 17px;
-            color: #4a4a4a;
-            margin-bottom: 32px;
+        .publication-meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            font-style: italic;
         }
         
-        .contact-info {
-            font-size: 18px;
-            color: #1a1a1a;
+        .publication-abstract {
+            margin-top: 12px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Skills/Methodologies */
+        .methods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .method-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 3px;
+        }
+        
+        .method-category h4 {
+            color: #34495e;
             margin-bottom: 12px;
+            font-size: 1rem;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 8px;
+        }
+        
+        .method-category ul {
+            list-style: none;
+            padding: 0;
+            font-size: 0.9rem;
+        }
+        
+        .method-category li {
+            padding: 4px 0;
+            color: #555;
+        }
+        
+        /* Teaching/Projects */
+        .project-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .project-item:last-child {
+            border-bottom: none;
+        }
+        
+        .project-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        /* Contact */
+        .contact-info {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 3px;
         }
         
         .contact-info a {
-            color: #1a1a1a;
+            color: #3498db;
             text-decoration: none;
-            font-weight: 500;
+            margin: 0 15px;
+            font-size: 1rem;
         }
         
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
         footer {
-            background: #1a1a1a;
-            color: #ffffff;
+            background: #34495e;
+            color: #ecf0f1;
             text-align: center;
-            padding: 40px 0;
+            padding: 25px 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
         }
         
-        footer p {
-            color: #a0a0a0;
-            font-size: 14px;
-        }
-        
+        /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 36px;
+            .header h1 {
+                font-size: 2rem;
             }
             
-            .hero .subtitle {
-                font-size: 18px;
+            section {
+                padding: 30px 20px;
             }
             
-            .nav-links {
-                gap: 20px;
-                font-size: 14px;
-            }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
+            nav a {
+                display: block;
+                margin: 10px 0;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo"><img src="logo.png">
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Header -->
+    <div class="header">
+        <h1>Xianghui (Lynette) Zeng</h1>
+        <div class="title">Researcher in Financial Data Systems & Business Analytics</div>
+        <div class="affiliations">MBA Business Intelligence & Analytics | Graduate Certificate AI & Analytics</div>
+    </div>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <h1>Financial Strategy, Compliance,<br>and Data Modeling Excellence</h1>
-            <p class="subtitle">Helping public organizations trust their data and make confident decisions.</p>
-            <a href="#contact" class="btn">Request a Consultation</a>
-        </div>
-    </section>
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Work</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <section id="what">
-        <div class="container">
-            <h2 class="section-title">What I Do</h2>
-            <div class="about-content" style="text-align: center;">
-                <p>I provide independent financial accuracy reviews, compliance support, and decision-ready analytics for public organizations and nonprofits.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="who" style="background: #f8f9fa;">
-        <div class="container">
-            <h2 class="section-title">Who I Help</h2>
-            <ul class="clients-list">
-                <li>Small Governments</li>
-                <li>Public Agencies</li>
-                <li>Airports</li>
-                <li>Nonprofits</li>
-                <li>Grant-Funded Organizations</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Lynette Zeng</h2>
-            <div class="about-content">
-                <p>I help public organizations and nonprofits strengthen financial accuracy, compliance, and decision-making through practical analytics and clear reporting.</p>
-                
-                <p>With a background spanning accounting, business analytics, information systems, and public-sector operations, I work at the intersection of finance and data—where accuracy matters and trust is essential.</p>
-                
-                <p>I have supported organizations where leadership depends on reliable information to make responsible decisions. Through that experience, I've seen how unclear data, weak controls, or rushed reporting can undermine confidence and create unnecessary risk.</p>
-                
-                <p>My approach is calm, independent, and practical. I focus on:</p>
-                <ul>
-                    <li>Improving financial clarity</li>
-                    <li>Strengthening internal controls</li>
-                    <li>Translating complex data into decision-ready insights</li>
-                </ul>
-                
-                <p>I believe good governance starts with trustworthy data. My work helps organizations move from uncertainty to confidence—without unnecessary complexity.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" style="background: #f8f9fa;">
-        <div class="container">
-            <h2 class="section-title">Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Financial Accuracy & Compliance Review</h3>
-                    <p class="description">Independent review of financial reports and data reliability</p>
-                    
-                    <div class="section-label">Includes</div>
-                    <ul>
-                        <li>Data consistency review</li>
-                        <li>Compliance risk identification</li>
-                        <li>Management-ready summary</li>
-                    </ul>
-                    
-                    <div class="section-label">Best For</div>
-                    <ul>
-                        <li>Small governments</li>
-                        <li>Public agencies</li>
-                        <li>Airports</li>
-                        <li>Nonprofits</li>
-                    </ul>
-                    
-    
-                </div>
-
-                <div class="service-card">
-                    <h3>Management Reporting & Analytics Setup</h3>
-                    <p class="description">Clear dashboards designed for leadership decisions</p>
-                    
-                    <div class="section-label">Includes</div>
-                    <ul>
-                        <li>Reporting template design</li>
-                        <li>Data validation rules</li>
-                        <li>Documentation and handoff</li>
-                    </ul>
-                    
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About</h2>
+        <div class="bio">
+            <p>I am a researcher with interdisciplinary training in accounting, business analytics, and information systems. My work examines the intersection of financial data integrity, database systems, and organizational decision-making—particularly in public sector and regulated environments.</p>
             
-                </div>
+            <p>My academic background spans accounting theory, quantitative methods, and applied database management. I hold an MBA in Business Intelligence and Business Analytics, a Graduate Certificate in Business Analytics and Artificial Intelligence, and a B.A. in Accounting. This combination allows me to approach research questions from both theoretical and technical perspectives.</p>
+            
+            <div class="highlight">
+                "I am interested in understanding how organizations can ensure financial data accuracy across complex technological systems, and how database architecture decisions impact accounting accuracy and organizational trust."
+            </div>
+            
+            <p>Before focusing on research, I gained extensive practical experience in government finance, airport operations, and financial systems implementation. This professional background informs my research agenda and provides insight into real-world challenges facing organizations today.</p>
+            
+            </div>
+    </section>
 
-                <div class="service-card">
-                    <h3>Internal Controls & Risk Assessment</h3>
-                    <p class="description">Practical review of processes and controls</p>
-                    
-                    <div class="section-label">Includes</div>
-                    <ul>
-                        <li>Risk register</li>
-                        <li>Control gap analysis</li>
-                        <li>Improvement roadmap</li>
-                    </ul>
-                
-                </div>
-
-                <div class="service-card">
-                    <h3>Monthly Advisory Support</h3>
-                    <p class="description">Ongoing financial and reporting guidance</p>
-                    
-                    <div class="section-label">Includes</div>
-                    <ul>
-                        <li>Report review</li>
-                        <li>Analytics questions</li>
-                        <li>Management support</li>
-                    </ul>
-                    
-              
-                </div>
+    <!-- Research Interests -->
+    <section id="research" class="container">
+        <h2>Research Interests</h2>
+        <p>My research interests center on the sociotechnical aspects of financial information systems:</p>
+        
+        <ul class="research-list">
+            <li><strong>Compensation Analysis Across Government Levels:</strong> Comparative analysis of compensation structures, benefits, and total rewards across federal, state, and local government positions—examining equity, retention, and workforce sustainability</li>
+            <li><strong>Financial Data Integrity:</strong> How organizations maintain accuracy and trust in financial data across complex database systems and reporting pipelines</li>
+            <li><strong>Government Budget Systems:</strong> Analysis of budgetary processes, allocation decisions, and financial planning systems across different levels of government</li>
+            <li><strong>Database Architecture & Accounting:</strong> The relationship between database design decisions and financial reporting quality in ERP systems</li>
+            <li><strong>Public Sector Financial Systems:</strong> Unique challenges of government accounting systems, data governance, and transparency</li>
+            <li><strong>Human-Data Interaction:</strong> How accountants and analysts interact with database systems, and how design impacts error rates and data quality</li>
+            <li><strong>AI & Automation in Financial Reporting:</strong> Implications of machine learning and automated systems for accounting accuracy, audit, and professional judgment</li>
+            <li><strong>Ethics in Financial Data Systems:</strong> Responsibility, accountability, and ethical considerations in automated financial reporting</li>
+        </ul>
+        
+        <h3>Methodological Approaches</h3>
+        <p>My research draws on mixed methods, including:</p>
+        <div class="methods-grid">
+            <div class="method-category">
+                <h4>Quantitative</h4>
+                <ul>
+                    <li>Statistical analysis (R, Python)</li>
+                    <li>Database query analysis (SQL)</li>
+                    <li>Data mining techniques</li>
+                    <li>Regression modeling</li>
+                </ul>
+            </div>
+            
+            <div class="method-category">
+                <h4>Qualitative</h4>
+                <ul>
+                    <li>Case study research</li>
+                    <li>Interview-based methods</li>
+                    <li>Process documentation</li>
+                    <li>Organizational analysis</li>
+                </ul>
+            </div>
+            
+            <div class="method-category">
+                <h4>Technical</h4>
+                <ul>
+                    <li>Database architecture review</li>
+                    <li>System design analysis</li>
+                    <li>Data flow mapping</li>
+                    <li>Error pattern analysis</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to improve financial clarity and confidence?</h2>
-            <p>Reliable data builds confidence. Clear reporting supports good governance. Strong controls reduce risk.</p>
-            <a href="#contact" class="btn btn-light">Contact Me</a>
+    <!-- Education -->
+    <section id="education" class="container">
+        <h2>Education</h2>
+        
+        <div class="education-item">
+            <div class="degree">MBA – Business Intelligence & Business Analytics</div>
+            <div class="institution">University of Alaska Anchorage</div>
+            <div class="year">2024</div>
+            <p style="margin-top: 10px;">Concentration in business intelligence, predictive analytics, data mining, and machine learning applications in business contexts. Thesis work focused on financial data systems and organizational decision-making.</p>
         </div>
+        
+        <div class="education-item">
+            <div class="degree">Graduate Certificate – Business Analytics & Artificial Intelligence</div>
+            <div class="institution">University of Alaska Anchorage</div>
+            <div class="year">2024</div>
+            <p style="margin-top: 10px;">Advanced coursework in machine learning, AI applications, Python programming, and statistical modeling for business analytics.</p>
+        </div>
+        
+        <div class="education-item">
+            <div class="degree">Bachelor of Arts in Accounting</div>
+            <div class="institution">China West Normal University</div>
+            <div class="year">2019</div>
+            <p style="margin-top: 10px;">Foundation in accounting principles, financial reporting, auditing, and organizational finance.</p>
+        </div>
+        
+        <h3 style="margin-top: 40px;">Current Research Focus</h3>
+        <p>My immediate research interests center on:</p>
+        <ul style="margin-left: 30px; margin-top: 15px;">
+            <li>Comparative compensation analysis across federal, state, and local government</li>
+            <li>Public sector workforce retention and compensation equity</li>
+            <li>Budget systems and financial decision-making in government contexts</li>
+            <li>Financial data systems in public sector organizations</li>
+        </ul>
     </section>
 
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <div class="contact-content">
-                <p>I'd be glad to have a brief conversation to see whether my services could support your organization.</p>
-                <div class="contact-info">
-                    <p>Email: <a href="mailto:contact@lynettezeng.com">contact@lynettezeng.com</a></p>
-                </div>
-                <div style="margin-top: 32px;">
-                    <p style="font-size: 15px; color: #666;">Lynette Zeng<br>Financial Strategy, Compliance & Data Analytics</p>
-                </div>
+    <!-- Publications/Working Papers -->
+    <section id="publications" class="container">
+        <h2>Working Papers & Projects</h2>
+        
+        <div class="publication">
+            <div class="publication-title">Compensation Equity Across Government Levels: A Comparative Analysis of Federal, State, and Local Government Employee Compensation</div>
+            <div class="publication-meta">Working Paper | In Development</div>
+            <div class="publication-abstract">
+                This study examines compensation structures across federal, state, and local government positions, analyzing total compensation packages including salary, benefits, pension systems, and other rewards. The research seeks to understand disparities in compensation for similar roles across government levels, implications for workforce retention and recruitment, and how these patterns affect public sector service delivery. Drawing on budget analysis experience and government financial data, this work addresses critical questions about equity and sustainability in public sector employment.
+            </div>
+        </div>
+        
+        <div class="publication">
+            <div class="publication-title">Budget Systems and Financial Decision-Making: Insights from State Government Operations</div>
+            <div class="publication-meta">Working Paper | Based on GOMB Experience</div>
+            <div class="publication-abstract">
+                Based on direct experience as a budget reviewer for the Governor's Office of Management and Budget, this research examines how budget systems, data infrastructure, and analytical processes influence state government financial decisions. The study explores the role of database systems, reporting tools, and data quality in budget allocation and oversight, with implications for government financial transparency and effectiveness.
+            </div>
+        </div>
+        
+        <div class="publication">
+            <div class="publication-title">The Database-Accounting Gap: Understanding Technical-Professional Boundaries in Financial Systems</div>
+            <div class="publication-meta">Research Proposal | Seeking Collaboration</div>
+            <div class="publication-abstract">
+                This proposed study investigates the organizational challenges that arise when accounting professionals and database administrators must collaborate on financial systems. Preliminary fieldwork suggests that differing mental models, vocabularies, and priorities create systematic communication gaps that impact data quality and system effectiveness.
+            </div>
+        </div>
+        
+        <div class="publication">
+            <div class="publication-title">Teaching SQL to Young Learners: The MomSQL Project</div>
+            <div class="publication-meta">Educational Initiative | Ongoing</div>
+            <div class="publication-abstract">
+                An experimental educational project exploring how database concepts and SQL can be taught to children through age-appropriate metaphors, games, and activities. This work connects to broader questions about data literacy, early STEM education, and making technical knowledge accessible.
             </div>
         </div>
     </section>
 
+    <!-- Teaching & Mentoring -->
+    <section id="teaching" class="container">
+        <h2>Teaching & Knowledge Sharing</h2>
+        
+        <p>While I am primarily focused on research, I am deeply interested in teaching and knowledge transfer, particularly in making technical concepts accessible to diverse audiences.</p>
+        
+        <div class="project-item">
+            <div class="project-title">MomSQL: SQL Education for Children</div>
+            <p>Developing curriculum and materials to teach database concepts and SQL to young learners. This project explores pedagogical approaches for technical education and the importance of early data literacy.</p>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-title">Financial Data Systems Workshops</div>
+            <p>Experience conducting internal workshops for accounting professionals on database fundamentals, SQL basics, and how to work effectively with technical teams.</p>
+        </div>
+        
+        <h3>Teaching Interests</h3>
+        <p>I am interested in teaching courses at the intersection of accounting, information systems, and analytics, such as:</p>
+        <ul style="margin-left: 30px; margin-top: 15px;">
+            <li>Accounting Information Systems</li>
+            <li>Database Management for Accountants</li>
+            <li>Financial Data Analytics</li>
+            <li>Business Intelligence & Reporting</li>
+            <li>Data Ethics in Finance and Accounting</li>
+        </ul>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="container">
+        <h2>Research Tools & Technical Skills</h2>
+        
+        <div class="methods-grid">
+            <div class="method-category">
+                <h4>Database Management</h4>
+                <ul>
+                    <li>SQL Server (T-SQL)</li>
+                    <li>PostgreSQL</li>
+                    <li>Database design & optimization</li>
+                    <li>Query performance analysis</li>
+                </ul>
+            </div>
+            
+            <div class="method-category">
+                <h4>Analytics & Programming</h4>
+                <ul>
+                    <li>Python (pandas, NumPy, scikit-learn)</li>
+                    <li>R (statistical analysis)</li>
+                    <li>Advanced SQL for analytics</li>
+                    <li>Data visualization (Power BI, Tableau)</li>
+                </ul>
+            </div>
+            
+            <div class="method-category">
+                <h4>Business Systems</h4>
+                <ul>
+                    <li>ERP systems</li>
+                    <li>Financial reporting systems</li>
+                    <li>Business intelligence platforms</li>
+                    <li>System integration analysis</li>
+                </ul>
+            </div>
+            
+            <div class="method-category">
+                <h4>Research Methods</h4>
+                <ul>
+                    <li>Quantitative analysis</li>
+                    <li>Case study methodology</li>
+                    <li>Mixed methods research</li>
+                    <li>Field research experience</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="container">
+        <h2>Professional Background</h2>
+        <p>My research agenda is informed by extensive professional experience in financial systems, database administration, and government operations:</p>
+        
+        <div class="project-item">
+            <div class="project-title">Governor's Office Budget Analysis</div>
+            <p>Current work as a budget reviewer analyzing state financial systems, budget proposals, and resource allocation decisions. This role provides direct observation of government budgeting processes and financial planning challenges.</p>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-title">Government Finance & Airport Operations</div>
+            <p>Experience managing financial data systems in government and airport operations contexts. This work provided direct observation of the challenges organizations face in maintaining data integrity across complex ERP and database environments.</p>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-title">Database Administration</div>
+            <p>Hands-on experience with SQL Server and PostgreSQL database management, including data architecture, optimization, and ensuring accuracy for financial reporting purposes.</p>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-title">Financial Systems Implementation</div>
+            <p>Direct involvement in financial system implementations, integrations, and reporting automation projects, providing insight into sociotechnical challenges of organizational change.</p>
+        </div>
+        
+        <p style="margin-top: 25px; font-style: italic;">This professional foundation enables practice-informed research that addresses real organizational challenges while maintaining scholarly rigor.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p style="margin-bottom: 20px;">I welcome inquiries from doctoral program advisors, potential research collaborators, and others interested in financial information systems research.</p>
+            <div>
+                <a href="mailto:xianghui.zeng@example.com">Email</a>
+                <a href="https://www.linkedin.com/in/lynettezeng" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">Google Scholar</a>
+            </div>
+            <p style="margin-top: 20px; color: #7f8c8d; font-size: 0.9rem;">Anchorage, Alaska, USA</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Lynette Zeng. All rights reserved.</p>
-        </div>
+        <p>&copy; 2026 Xianghui (Lynette) Zeng</p>
+        <p style="margin-top: 8px; opacity: 0.8;">Researcher in Financial Data Systems & Business Analytics</p>
     </footer>
 </body>
 </html>
