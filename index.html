@@ -85,9 +85,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,27,42,0.9
 .cred-item{display:flex;align-items:center;gap:0.75rem;font-size:0.8rem;color:var(--muted)}
 .cred-dot{width:6px;height:6px;border-radius:50%;background:var(--teal);flex-shrink:0}
 
-/* ══ SERVICES ══ */
-#services{background:var(--ink)}
-.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin-top:3rem}
+/* ══ For Research Inquiries ══ */
+#For Research Inquiries{background:var(--ink)}
+.inquiriess-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin-top:3rem}
 .svc-card{border:1px solid var(--border);border-radius:6px;padding:2rem;background:rgba(14,32,52,0.5);transition:all 0.3s;cursor:default}
 .svc-card:hover{border-color:rgba(13,148,136,0.5);background:rgba(13,148,136,0.05);transform:translateY(-3px)}
 .svc-num{font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;color:var(--teal);margin-bottom:1rem}
@@ -198,7 +198,7 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
 .footer-links a:hover{color:var(--teal2)}
 
 @media(max-width:800px){
-  .hero-grid,.about-grid,.services-grid,.cta-box,.diagram-cols{grid-template-columns:1fr}
+  .hero-grid,.about-grid,.inquiries-grid,.cta-box,.diagram-cols{grid-template-columns:1fr}
   .vault-grid,.phil-grid{grid-template-columns:1fr}
   .vault-wide .vault-body{grid-template-columns:repeat(2,1fr)}
   .research-emblem{width:260px;height:260px}
@@ -217,10 +217,10 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="#hero" class="nav-logo">Lynette Zeng <span>· Academic Researcher & Consultant</span></a>
+    <a href="#hero" class="nav-logo">Lynette Zeng <span>· Academic Researcher</span></a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
+      <li><a href="#inquiries">inquiries</a></li>
       <li><a href="#framework">HAA Framework</a></li>
       <li><a href="#vault">Compliance</a></li>
       <li><a href="#philosophy">Research</a></li>
@@ -237,11 +237,11 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
       <div>
         <div class="hero-kicker">HAA Research &amp; Innovation Hub</div>
         <h1 class="hero-h1">From Reactive Checks<br>to <em>Autonomous</em><br>Audit Intelligence</h1>
-        <p class="hero-sub">Academic research and applied consulting at the intersection of government accounting, agentic AI systems, and regulatory compliance — helping public agencies modernize without compromising oversight.</p>
-        <div class="hero-note">Academic Researcher · Research-Based Consulting</div>
+        <p class="hero-sub">Academic research at the intersection of government accounting, agentic AI systems, and regulatory compliance — helping public agencies modernize without compromising oversight.</p>
+        <div class="hero-note">Academic Researcher · Research-Based</div>
         <div class="hero-btns">
           <a href="#framework" class="btn-p">Explore the HAA Framework</a>
-          <a href="#cta" class="btn-o">Free Readiness Assessment</a>
+          <a href="#cta" class="btn-o">For Research Inquiries</a>
         </div>
         <div class="hero-stats">
           <div>
@@ -288,13 +288,13 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
         <h2 class="section-title">Academic Research<br>Meets <em>Applied Practice</em></h2>
         <p class="section-lead">As a pioneer in Agentic AI for auditing and creator of the Hybrid Agentic Audit (HAA) framework, focus on redefining financial operations, shifting from manual data processing to continuous, explainable audit intelligence, while maintaining rigorous compliance standards and human-in-the-loop governance.</p>
         <div class="divider"></div>
-        <p style="font-size:0.83rem;line-height:1.75;color:var(--muted);margin-bottom:1.25rem">My work bridges academic research in accounting information systems with practical consulting for government entities navigating the transition to AI-augmented finance operations. I focus specifically on the structures, safeguards, and standards needed to make agentic automation trustworthy in public sector contexts.</p>
+        <p style="font-size:0.83rem;line-height:1.75;color:var(--muted);margin-bottom:1.25rem">Bridges academic research in accounting information systems with practical for companies navigating the transition to AI-augmented finance operations. I focus specifically on the structures, safeguards, and standards needed to make agentic automation trustworthy in public sector contexts.</p>
         <div class="credentials-list">
-          <div class="cred-item"><div class="cred-dot"></div>Academic research in government accounting & AI systems</div>
+          <div class="cred-item"><div class="cred-dot"></div>Academic research in accounting & AI systems</div>
           <div class="cred-item"><div class="cred-dot"></div>Specialization: AI Oversight (Agentic Workflows),Data Analytics (SQL, Python) , Governmental Accounting, Accounting Technology </div>
           <div class="cred-item"><div class="cred-dot"></div>Creator of the Hybrid Agentic Audit (HAA) Framework</div>
           <div class="cred-item"><div class="cred-dot"></div>Developer: "Philosophies in Accounting" curriculum series</div>
-          <div class="cred-item"><div class="cred-dot"></div><em style="color:rgba(148,163,184,0.7);font-style:italic">Note: This site provides research-based consulting, not licensed CPA services</em></div>
+          <div class="cred-item"><div class="cred-dot"></div><em style="color:rgba(148,163,184,0.7);font-style:italic">Note: This site provides research-based.</em></div>
         </div>
       </div>
       <div class="about-cards">
@@ -309,7 +309,7 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
           <div class="about-icon">🏛</div>
           <div>
             <div class="about-card-title">Government Focus</div>
-            <div class="about-card-text">All research and consulting is grounded in the specific regulatory environment of public entities — GASB, FAA, OMB Uniform Guidance, and Alaska statutes.</div>
+            <div class="about-card-text">All research is grounded in the specific regulatory environment of public entities and private companies — GASB, FAA, OMB Uniform Guidance</div>
           </div>
         </div>
         <div class="about-card">
@@ -331,17 +331,17 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
   </div>
 </div>
 
-<!-- ══════════ SERVICES ══════════ -->
-<div id="services" class="section-wrap" style="background:var(--ink)">
+<!-- ══════════ inquiries ══════════ -->
+<div id="inquiries" class="section-wrap" style="background:var(--ink)">
   <div class="container">
-    <div class="section-tag">Consulting Services</div>
+    <div class="section-tag">Inquiries</div>
     <h2 class="section-title">How We Help<br><em>Government Agencies</em></h2>
-    <p class="section-lead">Research-backed consulting engagements designed around the specific needs, risk tolerance, and regulatory obligations of public sector finance teams.</p>
+    <p class="section-lead">Research-backed engagements designed around the specific needs, risk tolerance, and regulatory obligations of public sector and  private companies finance teams.</p>
     <div class="divider"></div>
-    <div class="services-grid">
+    <div class="inquiries-grid">
 
       <div class="svc-card">
-        <div class="svc-num">01 · Automation Consulting</div>
+        <div class="svc-num">01 · Automation inquiries</div>
         <div class="svc-title">Automating Manual Data Entry</div>
         <p class="svc-text">Help companies and agencies identify, map, and eliminate manual data entry workflows using the HAA Framework's agentic ingestion layer. From reconciliation to grant fund tracking, Design automated pipelines that connect your existing sources — ERPs, PDFs, Excel, databases — to normalized, audit-ready outputs with zero manual transcription.</p>
         <div class="svc-tags">
@@ -369,7 +369,7 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
       <div class="svc-card">
         <div class="svc-num">03 · Software Advisory</div>
         <div class="svc-title">Helping Agencies Choose the Right Software</div>
-        <p class="svc-text">The government finance software market is highly saturated, with numerous vendors competing to address GASB, FAA, federal, and local compliance requirements. Provide independent, research-based software selection guidance — evaluating tools against your compliance obligations, data architecture, staff skill level, and long-term interoperability needs. No vendor relationships, no commissions.</p>
+        <p class="svc-text">The finance software market is highly saturated, with numerous vendors competing to address GASB, FAA, federal, and local compliance requirements. Provide independent, research-based software selection guidance — evaluating tools against your compliance obligations, data architecture, staff skill level, and long-term interoperability needs. No vendor relationships, no commissions.</p>
         <div class="svc-tags">
           <span class="svc-tag">Vendor Evaluation</span>
           <span class="svc-tag">ERP Assessment</span>
@@ -382,7 +382,7 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
       <div class="svc-card">
         <div class="svc-num">04 · Training & Education</div>
         <div class="svc-title">Philosophies in Accounting Training</div>
-        <p class="svc-text">Deliver structured training workshops and curriculum materials for government finance staff, covering the intellectual foundations of agentic AI in accounting, regulatory compliance literacy (GASB, FAA, OMB), and the human judgment skills needed to oversee autonomous systems responsibly. Based on my academic "Philosophies in Accounting" curriculum series.</p>
+        <p class="svc-text">Deliver structured training workshops and curriculum materials for finance staff, covering the intellectual foundations of agentic AI in accounting, regulatory compliance literacy (GASB, FAA, OMB), and the human judgment skills needed to oversee autonomous systems responsibly. Based on my academic "Philosophies in Accounting" curriculum series.</p>
         <div class="svc-tags">
           <span class="svc-tag">Staff Workshops</span>
           <span class="svc-tag">GASB Literacy</span>
@@ -401,7 +401,7 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
   <div class="container">
     <div class="section-tag">The HAA Framework</div>
     <h2 class="section-title">Agentic AI for Auditing:<br><em>From Reactive Checks to Autonomous Intelligence</em></h2>
-    <p class="section-lead">A multi-agent architecture where six specialized AI agents — coordinated by an orchestration layer and grounded in Institutional Memory — continuously audit government financial data, escalating only meaningful exceptions to the Human-on-the-Loop.</p>
+    <p class="section-lead">A multi-agent architecture where six specialized AI agents — coordinated by an orchestration layer and grounded in Institutional Memory — continuously auditfinancial data, escalating only meaningful exceptions to the Human-on-the-Loop.</p>
     <div class="divider"></div>
 
     <div class="diagram-wrap">
@@ -592,11 +592,10 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
           <div class="vault-name">Quick Reference</div>
         </div>
         <div class="vault-body">
-          <div class="std-pill"><div class="std-code">GASB 34/87/96/54</div><div class="std-desc">Core government financial reporting</div></div>
+          <div class="std-pill"><div class="std-code">GASB 34/87/96/54</div><div class="std-desc">Core financial reporting</div></div>
           <div class="std-pill"><div class="std-code">FAA AC 150/5100-19D</div><div class="std-desc">PFC use &amp; audit standards</div></div>
           <div class="std-pill"><div class="std-code">2 CFR Part 200</div><div class="std-desc">Federal uniform grant guidance</div></div>
-          <div class="std-pill"><div class="std-code">Alaska AS 37</div><div class="std-desc">State finance statute</div></div>
-          <div class="std-pill"><div class="std-code">Yellow Book (GAGAS)</div><div class="std-desc">Government auditing standards</div></div>
+          <div class="std-pill"><div class="std-code">Yellow Book (GAGAS)</div><div class="std-desc">Auditing standards</div></div>
           <div class="std-pill"><div class="std-code">SOX / ISO Controls</div><div class="std-desc">Substantive testing frameworks</div></div>
         </div>
       </div>
@@ -609,30 +608,30 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
   <div class="container">
     <div class="section-tag">Academic Research &amp; Curriculum</div>
     <h2 class="section-title">Philosophies in<br><em>Accounting</em></h2>
-    <p class="section-lead">Research, writing, and curriculum development building the intellectual foundation for agentic AI in government finance — for practitioners, researchers, and the next generation of public sector accountants.</p>
+    <p class="section-lead">Research, writing, and curriculum development building the intellectual foundation AI in finance — for practitioners, researchers, and the next generation of accountants.</p>
     <div class="divider"></div>
     <div class="phil-grid">
       <div class="phil-card">
         <div class="phil-cat">Framework Theory</div>
         <div class="phil-title">Why "Hybrid" Is Not a Compromise — It's a New Standard</div>
-        <p class="phil-text">The case for preserving human judgment at the apex of every automated workflow, and why full autonomy creates unacceptable fiduciary and compliance risk in government finance.</p>
+        <p class="phil-text">The case for preserving human judgment at the apex of every automated workflow, and why full autonomy creates unacceptable fiduciary and compliance risk in finance.</p>
         <div class="phil-meta"><span class="phil-vol">HAA Series · Vol. 1</span><span class="phil-read">Read →</span></div>
       </div>
       <div class="phil-card">
         <div class="phil-cat">Agentic AI Systems</div>
-        <div class="phil-title">Multi-Agent Orchestration for Continuous Government Auditing</div>
+        <div class="phil-title">Multi-Agent Orchestration for Continuous Auditing</div>
         <p class="phil-text">How six specialized agents — each with a defined domain — coordinate through shared Institutional Memory to achieve 100% population analysis at costs traditional sampling cannot match.</p>
         <div class="phil-meta"><span class="phil-vol">Research Paper · 2024</span><span class="phil-read">Read →</span></div>
       </div>
       <div class="phil-card">
         <div class="phil-cat">Staff &amp; Capacity</div>
         <div class="phil-title">Your Finance Team Doesn't Need Fewer People. It Needs Better Problems.</div>
-        <p class="phil-text">Reframing automation as capacity expansion — freeing government accountants from data entry so they can focus on analysis, judgment, and policy-aligned financial stewardship.</p>
+        <p class="phil-text">Reframing automation as capacity expansion — freeing accountants from data entry so they can focus on analysis, judgment, and policy-aligned financial stewardship.</p>
         <div class="phil-meta"><span class="phil-vol">Policy Essay · 2024</span><span class="phil-read">Read →</span></div>
       </div>
       <div class="phil-card">
         <div class="phil-cat">Explainability</div>
-        <div class="phil-title">The XAI Traceability Imperative: What Government Auditors Need from AI</div>
+        <div class="phil-title">The XAI Traceability Imperative: What Auditors Need from AI</div>
         <p class="phil-text">Explainable AI isn't optional in the public sector. This paper defines minimum traceability standards for agentic systems operating in federally regulated financial environments.</p>
         <div class="phil-meta"><span class="phil-vol">Academic Paper · 2024</span><span class="phil-read">Read →</span></div>
       </div>
@@ -644,8 +643,8 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
       </div>
       <div class="phil-card">
         <div class="phil-cat">Curriculum</div>
-        <div class="phil-title">Philosophies in Accounting: A Government Finance Education Series</div>
-        <p class="phil-text">A structured curriculum preparing government finance professionals for agentic tools — covering AI oversight principles, regulatory fluency, data literacy, and ethical fiduciary judgment.</p>
+        <div class="phil-title">Philosophies in Accounting: A Finance Education Series</div>
+        <p class="phil-text">A structured curriculum preparing finance professionals for agentic tools — covering AI oversight principles, regulatory fluency, data literacy, and ethical fiduciary judgment.</p>
         <div class="phil-meta"><span class="phil-vol">Education Initiative</span><span class="phil-read">Explore →</span></div>
       </div>
     </div>
@@ -657,19 +656,11 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
   <div class="container">
     <div class="cta-box">
       <div>
-        <div class="section-tag">Work With Me</div>
-        <div class="cta-t">Is Your Agency Ready<br>for <em style="font-style:italic;color:var(--teal2)">Agentic Finance?</em></div>
-        <p class="cta-s">Receive a free Audit Automation Readiness Assessment — a structured research-based review of your current data entry workflows, compliance exposure, software landscape, and automation opportunity. Delivered as a written report.</p>
-        <div class="cta-checks">
-          <div class="cta-check"><span>✓</span> No obligation</div>
-          <div class="cta-check"><span>✓</span> Government entities only</div>
-          <div class="cta-check"><span>✓</span> Research-based</div>
-          <div class="cta-check"><span>✓</span> Delivered as PDF report</div>
-        </div>
+        
       </div>
       <div class="cta-form">
-        <input type="text" placeholder="Agency or Municipality Name" class="cta-inp">
-        <input type="email" placeholder="Your Government Email (.gov)" class="cta-inp">
+        <input type="text" placeholder="Companies Name" class="cta-inp">
+        <input type="email" placeholder="YourEmail" class="cta-inp">
         <input type="text" placeholder="Your Role / Title" class="cta-inp">
         <select class="cta-inp" style="cursor:pointer">
           <option value="" style="background:#0d1b2a">Service of Interest…</option>
@@ -679,8 +670,7 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
           <option style="background:#0d1b2a">Philosophies in Accounting Training</option>
           <option style="background:#0d1b2a">General Readiness Assessment</option>
         </select>
-        <button class="cta-btn">Request Free Assessment</button>
-        <div class="cta-note">For city, county, borough &amp; state agencies.<br>Response within 2 business days.</div>
+        <button class="cta-btn">For Research Inquiries</button>
       </div>
     </div>
   </div>
@@ -690,9 +680,9 @@ footer{background:rgba(8,16,28,0.95);border-top:1px solid rgba(13,148,136,0.12);
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">Lynette Zeng · HAA Research Hub</div>
-    <div class="footer-note">Academic researcher and consultant in government accounting automation. This site provides research-based consulting information.</div>
+    <div class="footer-note">Academic researcher in accounting automation. This site provides research-based information.</div>
     <div class="footer-links">
-      <a href="#services">Services</a>
+      <a href="#inquiries">inquiries</a>
       <a href="#framework">Framework</a>
       <a href="#vault">Compliance</a>
       <a href="#philosophy">Research</a>
