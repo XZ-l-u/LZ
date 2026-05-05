@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPFO Risk Assessment Mastery – 15-Module Curriculum Map</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #e8f0f7;
+    --card: #ffffff;
+    --phase1: #2e7d32;
+    --phase1-light: #c8e6c9;
+    --phase2: #0d47a1;
+    --phase2-light: #bbdefb;
+    --phase3: #e65100;
+    --phase3-light: #ffe0b2;
+    --phase4: #6a1b9a;
+    --phase4-light: #e1bee7;
+    --final: #b71c1c;
+    --gold: #f9a825;
+    --text-dark: #1a1a2e;
+    --text-mid: #37474f;
+    --shadow: 0 4px 20px rgba(0,0,0,0.12);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Exo 2', sans-serif;
+    background: var(--bg);
+    color: var(--text-dark);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: linear-gradient(135deg, #0d1b2a 0%, #1a2e45 60%, #0d3b6e 100%);
+    color: #fff;
+    text-align: center;
+    padding: 2.5rem 1rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(255,255,255,.03) 30px, rgba(255,255,255,.03) 31px);
+  }
+  header .eyebrow {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    letter-spacing: .35em;
+    font-size: .75rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: .4rem;
+  }
+  header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.6rem, 7vw, 5rem);
+    letter-spacing: .06em;
+    line-height: .95;
+    color: #fff;
+  }
+  header h1 span { color: var(--gold); }
+  header .sub {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: clamp(.9rem, 2.5vw, 1.2rem);
+    letter-spacing: .25em;
+    color: #90caf9;
+    margin-top: .6rem;
+    text-transform: uppercase;
+  }
+
+  /* ── LAYOUT ── */
+  main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+
+  /* ── PHASE LEGEND ── */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    background: #fff;
+    border-radius: 50px;
+    padding: .35rem .9rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: .82rem;
+    letter-spacing: .05em;
+  }
+  .legend-dot {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── PHASE SECTIONS ── */
+  .phase-section {
+    margin-bottom: 2rem;
+  }
+  .phase-header {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: 1.1rem;
+  }
+  .phase-badge {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: .7rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    padding: .25rem .8rem;
+    border-radius: 3px;
+    color: #fff;
+  }
+  .phase-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--text-mid);
+  }
+  .phase-line {
+    flex: 1;
+    height: 2px;
+    border-radius: 2px;
+    opacity: .3;
+  }
+
+  /* ── MODULE GRID ── */
+  .module-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: stretch;
+    position: relative;
+  }
+
+  /* connector arrow between modules */
+  .arrow-connector {
+    display: flex;
+    align-items: center;
+    color: #9e9e9e;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    padding-top: 0;
+    align-self: center;
+  }
+
+  /* ── MODULE CARD ── */
+  .module-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 1.1rem 1rem 1rem;
+    flex: 1;
+    min-width: 150px;
+    max-width: 220px;
+    position: relative;
+    transition: transform .2s, box-shadow .2s;
+    border-top: 4px solid transparent;
+    cursor: default;
+  }
+  .module-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 32px rgba(0,0,0,.16);
+  }
+  .module-num {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: .6rem;
+    flex-shrink: 0;
+  }
+  .module-name {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: .85rem;
+    line-height: 1.3;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--text-dark);
+  }
+  .module-desc {
+    font-size: .72rem;
+    color: #607d8b;
+    margin-top: .35rem;
+    line-height: 1.4;
+  }
+  .module-tag {
+    display: inline-block;
+    font-size: .6rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: .15rem .5rem;
+    border-radius: 3px;
+    margin-top: .5rem;
+    opacity: .85;
+  }
+
+  /* Phase color sets */
+  .p1 .module-card { border-top-color: var(--phase1); }
+  .p1 .module-num { background: var(--phase1); }
+  .p1 .module-tag { background: var(--phase1-light); color: var(--phase1); }
+  .p1 .arrow-connector { color: var(--phase1); }
+
+  .p2 .module-card { border-top-color: var(--phase2); }
+  .p2 .module-num { background: var(--phase2); }
+  .p2 .module-tag { background: var(--phase2-light); color: var(--phase2); }
+  .p2 .arrow-connector { color: var(--phase2); }
+
+  .p3 .module-card { border-top-color: var(--phase3); }
+  .p3 .module-num { background: var(--phase3); }
+  .p3 .module-tag { background: var(--phase3-light); color: var(--phase3); }
+  .p3 .arrow-connector { color: var(--phase3); }
+
+  .p4 .module-card { border-top-color: var(--phase4); }
+  .p4 .module-num { background: var(--phase4); }
+  .p4 .module-tag { background: var(--phase4-light); color: var(--phase4); }
+  .p4 .arrow-connector { color: var(--phase4); }
+
+  /* ── CAPSTONE ── */
+  .capstone-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .capstone-card {
+    background: linear-gradient(135deg, #b71c1c, #7f0000);
+    color: #fff;
+    border-radius: 16px;
+    padding: 1.6rem 2.4rem;
+    text-align: center;
+    box-shadow: 0 8px 40px rgba(183,28,28,.45);
+    min-width: 260px;
+    position: relative;
+    overflow: hidden;
+  }
+  .capstone-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(-45deg, transparent, transparent 12px, rgba(255,255,255,.04) 12px, rgba(255,255,255,.04) 13px);
+  }
+  .capstone-num {
+    width: 52px; height: 52px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: #7f0000;
+    margin: 0 auto .8rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,.3);
+    position: relative;
+    z-index: 1;
+  }
+  .capstone-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: .08em;
+    position: relative;
+    z-index: 1;
+  }
+  .capstone-card p {
+    font-size: .8rem;
+    opacity: .85;
+    margin-top: .4rem;
+    position: relative;
+    z-index: 1;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: .06em;
+  }
+
+  /* ── MERMAID SECTION ── */
+  .diagram-section {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+  .diagram-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: .06em;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--gold);
+    padding-left: .8rem;
+  }
+  .mermaid {
+    overflow-x: auto;
+  }
+
+  /* ── CONVERGENCE CALLOUT ── */
+  .convergence {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0 .5rem;
+  }
+  .convergence-badge {
+    background: linear-gradient(90deg, var(--phase2), var(--phase3));
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: .72rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    padding: .3rem 1.2rem;
+    border-radius: 50px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.2);
+  }
+
+  /* phase divider arrow */
+  .phase-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: .8rem 0;
+    color: #90a4ae;
+    font-size: .75rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  .phase-divider::before, .phase-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #cfd8dc, transparent);
+  }
+
+  /* resources strip */
+  .resources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+    margin-top: 1.2rem;
+    padding-top: 1.2rem;
+    border-top: 1px dashed #e0e0e0;
+  }
+  .resource-pill {
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: .3rem .7rem;
+    font-size: .67rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    letter-spacing: .05em;
+    color: #607d8b;
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+  }
+  .resource-pill svg { flex-shrink: 0; }
+
+  /* scroll reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .5s ease, transform .5s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  @media(max-width: 700px) {
+    .module-flow { flex-direction: column; align-items: stretch; }
+    .module-card { max-width: 100%; }
+    .arrow-connector { transform: rotate(90deg); align-self: flex-start; margin-left: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Certified Public Finance Officer</div>
+  <h1>CPFO <span>Risk Assessment</span><br>Mastery</h1>
+  <div class="sub">15-Module Curriculum Map</div>
+</header>
+
+<main>
+
+  <!-- LEGEND -->
+  <div class="legend reveal">
+    <div class="legend-item"><span class="legend-dot" style="background:var(--phase1)"></span>Phase 1 · ERM Foundations</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--phase2)"></span>Phase 2 · Cyber Risk Deep Dive</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--phase3)"></span>Phase 3 · Internal Controls & Governance</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--phase4)"></span>Phase 4 · Business Continuity & Ops Risk</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--final)"></span>Capstone · Final Review</div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       PHASE 1
+  ═══════════════════════════════════════════════ -->
+  <div class="phase-section p1 reveal">
+    <div class="phase-header">
+      <span class="phase-badge" style="background:var(--phase1)">Phase 1</span>
+      <span class="phase-title">Foundation Phase: ERM & the Foundations of Risk</span>
+      <div class="phase-line" style="background:var(--phase1)"></div>
+    </div>
+    <div class="module-flow">
+
+      <div class="module-card">
+        <div class="module-num">1</div>
+        <div class="module-name">Understanding Advanced ERM Foundations</div>
+        <div class="module-desc">Understanding definitions before definitions — building the bedrock ERM vocabulary.</div>
+        <span class="module-tag">ERM Fundamentals</span>
+      </div>
+
+      <div class="arrow-connector">→</div>
+
+      <div class="module-card">
+        <div class="module-num">2</div>
+        <div class="module-name">Risk Treatment Strategies</div>
+        <div class="module-desc">Identifying raw danger manger before controls.</div>
+        <span class="module-tag">Treatment</span>
+      </div>
+
+      <div class="arrow-connector">→</div>
+
+      <div class="module-card">
+        <div class="module-num">3</div>
+        <div class="module-name">Risk Identification &amp; Inherent Risk</div>
+        <div class="module-desc">Identifying raw danger before controls are applied.</div>
+        <span class="module-tag">Risk ID</span>
+      </div>
+
+    </div>
+
+    <div class="resources">
+      <div class="resource-pill">
+        <svg width="10" height="12" viewBox="0 0 10 12" fill="none"><rect x="1" y="1" width="8" height="10" rx="1" stroke="#607d8b" stroke-width="1.3"/><line x1="3" y1="4" x2="7" y2="4" stroke="#607d8b" stroke-width="1"/><line x1="3" y1="6.5" x2="7" y2="6.5" stroke="#607d8b" stroke-width="1"/></svg>
+        Risk Assessment Study Terms &amp; Concepts – December 2022.pdf
+      </div>
+      <div class="resource-pill">
+        <svg width="10" height="12" viewBox="0 0 10 12" fill="none"><rect x="1" y="1" width="8" height="10" rx="1" stroke="#607d8b" stroke-width="1.3"/><line x1="3" y1="4" x2="7" y2="4" stroke="#607d8b" stroke-width="1"/></svg>
+        30-Question Practice Test – Risk Assessment Exam.docx
+      </div>
+    </div>
+  </div>
+
+  <div class="phase-divider">↓ progresses into ↓</div>
+
+  <!-- ═══════════════════════════════════════════════
+       PHASE 2
+  ═══════════════════════════════════════════════ -->
+  <div class="phase-section p2 reveal">
+    <div class="phase-header">
+      <span class="phase-badge" style="background:var(--phase2)">Phase 2</span>
+      <span class="phase-title">The Cyber Risk Deep Dive</span>
+      <div class="phase-line" style="background:var(--phase2)"></div>
+    </div>
+    <div class="module-flow">
+
+      <div class="module-card">
+        <div class="module-num">4</div>
+        <div class="module-name">Ransomware Risk Model</div>
+        <div class="module-desc">Anatomy of ransomware threats and sector-specific modeling.</div>
+        <span class="module-tag">Threat Modeling</span>
+      </div>
+
+      <div class="arrow-connector">→</div>
+
+      <div class="module-card">
+        <div class="module-num">5</div>
+        <div class="module-name">Quantifying the "Unquantifiable"</div>
+        <div class="module-desc">Frameworks for putting dollar values on intangible cyber exposures.</div>
+        <span class="module-tag">Quantification</span>
+      </div>
+
+      <div class="arrow-connector">→</div>
+
+      <div class="module-card">
+        <div class="module-num">6</div>
+        <div class="module-name">Cyber Insurance Underwriting</div>
+        <div class="module-desc">How insurers assess public-sector cyber risk and price coverage.</div>
+        <span class="module-tag">Insurance</span>
+      </div>
+
+      <div class="arrow-connector">→</div>
+
+      <div class="module-card">
+        <div class="module-num">7</div>
+        <div class="module-name">Limits, Sublimits &amp; Exclusions</div>
+        <div class="module-desc">Navigating policy language traps and coverage gaps.</div>
+        <span class="module-tag">Policy Logic</span>
+      </div>
+
+      <div class="arrow-connector">→</div>
+
+      <div class="module-card">
+        <div class="module-num">8</div>
+        <div class="module-name">Remedial vs. Preventative</div>
+        <div class="module-desc">Balancing after-the-fact remediation with proactive prevention investment.</div>
+        <span class="module-tag">Strategy</span>
+      </div>
+
+    </div>
+
+    <div class="resources">
+      <div class="resource-pill">
+        <svg width="10" height="12" viewBox="0 0 10 12" fill="none"><rect x="1" y="1" width="8" height="10" rx="1" stroke="#607d8b" stroke-width="1.3"/></svg>
+        Cyber Risk Savvy_R1.pdf
+      </div>
+      <div class="resource-pill">
+        <svg width="10" height="12" viewBox="0 0 10 12" fill="none"><rect x="1" y="1" width="8" height="10" rx="1" stroke="#607d8b" stroke-width="1.3"/></svg>
+        30-Question Practice Test (Modules 5–8) – Risk Assessment Exam.docx
+      </div>
+    </div>
+  </div>
+
+  <div class="convergence">
+    <span class="convergence-badge">⟳ Convergence Point — Policy Logic (M8) feeds both Phase 3 &amp; Phase 4</span>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       PHASE 3
+  ═══════════════════════════════════════════════ -->
+  <div class="phase-section p3 reveal">
+    <div class="phase-header">
+      <span class="phase-badge" style="background:var(--phase3)">Phase 3</span>
+      <span class="phase-title">Internal Controls &amp; Governance</span>
+      <div class="phase-line" style="background:var(--phase3)"></div>
+    </div>
+    <div class="module-flow">
+
+      <div class="module-card">
+        <div class="module-num">9</div>
+        <div class="module-name">Internal Control Framework</div>
+        <div class="module-desc">COSO / INTOSAI frameworks applied to public finance environments.</div>
+        <span class="module-tag">Frameworks</span>
+      </div>
+
+      <div class="arrow-connector">→</div>
+
+      <div class="module-card">
+        <div class="module-num">10</div>
+        <div class="module-name">Fraud Prevention &amp; Detection</div>
+        <div class="module-desc">Red flags, segregation of duties, and detection analytics.</div>
+        <span class="module-tag">Fraud</span>
+      </div>
+
+      <div class="arrow-connector">→</div>
+
+      <div class="module-card">
+        <div class="module-num">11</div>
+        <div class="module-name">Ethics &amp; Transparency</div>
+        <div class="module-desc">Building an ethical culture and transparent reporting standards.</div>
+        <span class="module-tag">Governance</span>
+      </div>
+
+      <div class="arrow-connector">→</div>
+
+      <div class="module-card">
+        <div class="module-num">12</div>
+        <div class="module-name">Service Delivery Alternatives</div>
+        <div class="module-desc">Shared services, outsourcing, and risk transfer models in government.</div>
+        <span class="module-tag">Service Models</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="phase-divider">↕ parallel track ↕</div>
+
+  <!-- ═══════════════════════════════════════════════
+       PHASE 4
+  ═══════════════════════════════════════════════ -->
+  <div class="phase-section p4 reveal">
+    <div class="phase-header">
+      <span class="phase-badge" style="background:var(--phase4)">Phase 4</span>
+      <span class="phase-title">Business Continuity &amp; Operational Risk</span>
+      <div class="phase-line" style="background:var(--phase4)"></div>
+    </div>
+    <div class="module-flow">
+
+      <div class="module-card">
+        <div class="module-num">11</div>
+        <div class="module-name">Ethics &amp; Transparency <em style="font-size:.65rem;opacity:.7">(Shared)</em></div>
+        <div class="module-desc">Feeds both governance and business-continuity planning perspectives.</div>
+        <span class="module-tag">Shared Module</span>
+      </div>
+
+      <div class="arrow-connector">→</div>
+
+      <div class="module-card">
+        <div class="module-num">13</div>
+        <div class="module-name">Disaster Preparedness &amp; Resiliency</div>
+        <div class="module-desc">Pre-event planning: continuity plans, tabletop exercises, resource staging.</div>
+        <span class="module-tag">Preparedness</span>
+      </div>
+
+      <div class="arrow-connector">→</div>
+
+      <div class="module-card">
+        <div class="module-num">14</div>
+        <div class="module-name">Capidil Responsy / Disaster Response &amp; Recovery</div>
+        <div class="module-desc">Activating BCP, incident command, FEMA coordination, and recovery accounting.</div>
+        <span class="module-tag">Response</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       CAPSTONE
+  ═══════════════════════════════════════════════ -->
+  <div class="phase-divider">all paths converge</div>
+
+  <div class="capstone-wrap reveal">
+    <div class="capstone-card">
+      <div class="capstone-num">15</div>
+      <h3>The Final Review &amp; Simulation</h3>
+      <p>Full-scope CPFO Risk Assessment Mastery exam simulation — integrating all 14 preceding modules.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       MERMAID FLOW DIAGRAM
+  ═══════════════════════════════════════════════ -->
+  <div class="diagram-section reveal">
+    <h2>Structural Flow Diagram</h2>
+    <div class="mermaid">
+graph TD
+    subgraph P1["🟢 Phase 1 · ERM &amp; Foundations"]
+        M1["① Understanding Advanced ERM Foundations"]:::p1
+        M2["② Risk Treatment Strategies"]:::p1
+        M3["③ Risk Identification &amp; Inherent Risk"]:::p1
+        M1 --> M2 --> M3
+    end
+
+    subgraph P2["🔵 Phase 2 · Cyber Risk Deep Dive"]
+        M4["④ Ransomware Risk Model"]:::p2
+        M5["⑤ Quantifying the 'Unquantifiable'"]:::p2
+        M6["⑥ Cyber Insurance Underwriting"]:::p2
+        M7["⑦ Limits, Sublimits &amp; Exclusions"]:::p2
+        M8["⑧ Remedial vs. Preventative · Policy Logic"]:::p2
+        M4 --> M5 --> M6 --> M7 --> M8
+    end
+
+    subgraph P3["🟠 Phase 3 · Internal Controls &amp; Governance"]
+        M9["⑨ Internal Control Framework"]:::p3
+        M10["⑩ Fraud Prevention &amp; Detection"]:::p3
+        M11["⑪ Ethics &amp; Transparency"]:::p3
+        M12["⑫ Service Delivery Alternatives"]:::p3
+        M9 --> M10 --> M11 --> M12
+    end
+
+    subgraph P4["🟣 Phase 4 · Business Continuity &amp; Ops Risk"]
+        M13["⑬ Disaster Preparedness &amp; Resiliency"]:::p4
+        M14["⑭ Disaster Response &amp; Recovery / Capidil Responsy"]:::p4
+        M13 --> M14
+    end
+
+    M15["⑮ THE FINAL REVIEW &amp; SIMULATION"]:::final
+
+    M3 --> M4
+    M3 --> M9
+    M8 --> M9
+    M11 --> M13
+    M12 --> M15
+    M14 --> M15
+
+    classDef p1 fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20
+    classDef p2 fill:#bbdefb,stroke:#0d47a1,stroke-width:2px,color:#0d47a1
+    classDef p3 fill:#ffe0b2,stroke:#e65100,stroke-width:2px,color:#bf360c
+    classDef p4 fill:#e1bee7,stroke:#6a1b9a,stroke-width:2px,color:#4a148c
+    classDef final fill:#b71c1c,stroke:#7f0000,stroke-width:3px,color:#fff
+    </div>
+  </div>
+
+  <!-- M. Mastery Pipeline note -->
+  <p style="text-align:center; font-family:'Rajdhani',sans-serif; font-size:.75rem; color:#90a4ae; letter-spacing:.12em; text-transform:uppercase; margin-top:2.5rem;">M. Mastery Pipeline · CPFO Risk Assessment Curriculum</p>
+
+</main>
+
+<script>
+  // init mermaid
+  mermaid.initialize({ startOnLoad: true, theme: 'base', themeVariables: {
+    primaryColor: '#bbdefb',
+    primaryTextColor: '#0d47a1',
+    primaryBorderColor: '#0d47a1',
+    lineColor: '#546e7a',
+    secondaryColor: '#c8e6c9',
+    tertiaryColor: '#ffe0b2',
+    background: '#ffffff'
+  }});
+
+  // scroll reveal
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
